@@ -10,6 +10,8 @@
 
 ## 用法
 
+到 Release 頁面下載主程式並打開即可，或者你想直接用 Python 執行程式碼。
+
 安裝 `pynput` 套件：
 
 ```python
