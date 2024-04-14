@@ -27,7 +27,7 @@ class CountdownApp:
         bg = config.get("background", "#AAA").strip('"').strip("'")
         self.duration = int(config.get("duration", 205))  # 倒數總秒數
         self.x_offset_scale = float(config.get("x-offset-scale", 0.15))
-        self.y_offset_scale = float(config.get("y-offset-scale", 0.15))
+        self.y_offset_scale = float(config.get("y-offset-scale", -0.15))
         self.update_interval = int(config.get("update-interval", 100))
 
         self.root = root
