@@ -63,7 +63,7 @@ class CountdownApp:
         mm1, ss1 = divmod(total_time_pass, 60)
         hh1, mm1 = divmod(mm1, 60)
 
-        timeformat = f"[{self.turns:d}] {mm0:02d}:{ss0:02d}\n{hh1:02d}:{hh1:02d}:{ss1:02d}"
+        timeformat = f"[{self.turns:d}] {mm0:02d}:{ss0:02d}\n{hh1:02d}:{mm1:02d}:{ss1:02d}"
         self.label.config(text=timeformat)
 
         self.root.after(self.update_interval, self.update_clock)
